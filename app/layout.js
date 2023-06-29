@@ -9,11 +9,11 @@ import useMediaQuery from "./libraries/useMediaQuery";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
-/* Export metadata */
+/* Export metadata 
 export const metadata = {
   title: "Calisthenics Gallery",
   description: "Created by Trae Zeeofor",
-};
+}; */
 
 /* 
 Define the RootLayout component
