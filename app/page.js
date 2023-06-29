@@ -1,6 +1,11 @@
 /* Import the Link component from Next.js */
 import Link from "next/link";
 
+export const metadata = {
+  title: "Calisthenics Gallery",
+  description: "Created by Trae Zeeofor",
+}; 
+
 /* 
 Export the Home component 
 Return the Home component
