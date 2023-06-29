@@ -17,7 +17,7 @@ export default function Home() {
           <h1>
             Hi, my name is <span>Trae Zeeofor</span>
           </h1>
-          <h2>I've been a Fitness Junkie since August 2020</h2>
+          <h2>I have been a Fitness Junkie since August 2020</h2>
           <h2>
             This website lists my favourite Calisthenics (body-weight) exercises
           </h2>
