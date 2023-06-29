@@ -1,0 +1,2 @@
+This project ended up being a mash up of 2 previous React Router projects. Both functionalities were combined aside fetch API call, and implemented via Next.js App router.
+Different difficult bugs popped up along project life cycle, that they were all satisfactorily resolved. Practice will always make perfect and I look forward to doing similar projects in an advanced manner. 

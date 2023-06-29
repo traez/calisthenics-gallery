@@ -1,95 +1,78 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+/* Import the Link component from Next.js */
+import Link from "next/link";
 
+/* 
+Export the Home component 
+Return the Home component
+This aside section contains the author's name, title, and a brief description of the website
+This image section contains an image of the author
+The navigation section contains links to the different exercise categories
+Link are added to take user to different sections/pages of App
+*/
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <section id="sec-home">
+      <article>
+        <aside>
+          <h1>
+            Hi, my name is <span>Trae Zeeofor</span>
+          </h1>
+          <h2>I've been a Fitness Junkie since August 2020</h2>
+          <h2>
+            This website lists my favourite Calisthenics (body-weight) exercises
+          </h2>
+        </aside>
+        <div id="art-div">
+          <img src="./images/home-trae-zeeofor.jpg" id="traez" alt="" />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </article>
+      <nav>
+        <div id="nav-up">
+          <img
+            src="./images/home-upper-body.jpg"
+            id="homeup"
+            alt=""
+            className="nav-img"
+          />
+        </div>
+        <div id="nav-up-te">
+          <h3>
+            <Link href="/upper" className="nav-h3">
+              UpperBody Exercises
+            </Link>
+          </h3>
+        </div>
+        <div id="nav-lo">
+          <img
+            src="./images/home-lower-body.jpg"
+            id="homelo"
+            alt=""
+            className="nav-img"
+          />
+        </div>
+        <div id="nav-lo-te">
+          <h3>
+            <Link href="/lower" className="nav-h3">
+              LowerBody Exercises
+            </Link>
+          </h3>
+        </div>
+        <div id="nav-co">
+          <img
+            src="./images/home-core.jpeg"
+            id="homeco"
+            alt=""
+            className="nav-img"
+          />
+        </div>
+        <div id="nav-co-te">
+          <h3>
+            <Link href="/core" className="nav-h3">
+              Core (Cardio/Aerobics/Miscellaneous) Exercises
+            </Link>
+          </h3>
+        </div>
+      </nav>
+    </section>
+  );
 }
