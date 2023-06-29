@@ -11,6 +11,11 @@ The Link component with the href attribute `/upper/${item.id}` renders a link to
 import Link from "next/link";
 import dataUpperBody from "../libraries/dataUpperBody";
 
+export const metadata = {
+  title: "Calisthenics Gallery",
+  description: "Created by Trae Zeeofor",
+}; 
+
 export default function UpperHome() {
   return (
     <section className="sec-drill">
